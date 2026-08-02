@@ -1,0 +1,76 @@
+generated: '2026-07-31'
+method: searched
+probe: true
+url: https://o9solutions.com/security
+source: https://o9solutions.com/security
+note: >-
+  o9 does not operate a dedicated trust-center portal (trust.o9solutions.com and
+  security.o9solutions.com do not resolve). The compliance posture is published
+  on the product security page at https://o9solutions.com/security, which names
+  the certifications and frameworks below. No audit reports or certificates are
+  downloadable without contacting o9.
+certifications:
+- id: iso-27001
+  name: ISO/IEC 27001
+  description: International standard for managing information security.
+- id: iso-27017
+  name: ISO/IEC 27017
+  description: Security controls for the provision and use of cloud services.
+- id: soc-1
+  name: SOC 1
+  description: Audit of internal controls over financial reporting for a service organization.
+- id: soc-2
+  name: SOC 2
+  description: Audit of the design and operating effectiveness of security and privacy
+    controls over a period.
+- id: c5
+  name: BSI C5
+  description: German government Cloud Computing Compliance Criteria Catalogue for
+    cloud providers.
+- id: tisax
+  name: TISAX
+  description: Automotive-industry information security assessment and exchange standard.
+- id: nist-csf
+  name: NIST CSF 1.1
+  description: NIST Cybersecurity Framework 1.1 for identify, protect, detect, respond
+    and recover.
+regulations:
+- id: gdpr
+  name: GDPR
+  description: EU General Data Protection Regulation.
+- id: ccpa
+  name: CCPA
+  description: California Consumer Privacy Act.
+ratings:
+- name: BitSight
+  score: '810'
+  note: score self-reported on the o9 security page
+security_capabilities:
+- identity and device management (single sign-on, domain claiming, enterprise mobility
+  management)
+- data protection (encryption at rest and in transit)
+- network security and server hardening
+- administrative access control
+- system monitoring, logging and alerting
+related:
+  vulnerability_disclosure: security/o9-solutions-vulnerability-disclosure.yml
+  privacy_policy: https://o9solutions.com/privacy-policy
+  supplier_code_of_conduct: https://o9solutions.com/supplier-code-of-conduct
+evidence:
+- source: https://o9solutions.com/security
+  http_status: 200
+  keywords:
+  - iso/iec 27001
+  - iso/iec 27017
+  - soc 1
+  - soc 2
+  - c5
+  - tisax
+  - nist csf 1.1
+  - gdpr
+  - ccpa
+- source: https://trust.o9solutions.com/
+  http_status: 0
+  note: does not resolve
+x-evidence:
+  fetched: '2026-07-31'

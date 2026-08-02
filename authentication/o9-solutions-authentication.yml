@@ -1,0 +1,77 @@
+generated: '2026-07-31'
+method: probed
+source: https://guide.o9solutions.com/oauthserver/authorize
+docs: https://guide.o9solutions.com/Resources/ApiDocs
+summary:
+  types:
+  - oauth2
+  oauth2_flows:
+  - authorizationCode
+  api_key_in: []
+  public_api_auth_documentation: gated
+  note: >-
+    o9 publishes no public OpenAPI, so this profile is NOT derived from a
+    machine-readable contract. It records the authentication surface that is
+    directly observable without an account: o9 operates its own OAuth 2.0
+    authorization server at guide.o9solutions.com/oauthserver, and every o9
+    developer property (the API guide, the platform wiki, the community, the
+    documentation portal) is a client of it. The authentication contract for
+    the o9 Platform API and Reference Model API themselves is documented behind
+    that gate and is not publicly retrievable.
+schemes:
+- name: o9 OAuth 2.0 (guide.o9solutions.com/oauthserver)
+  type: oauth2
+  flows:
+  - flow: authorizationCode
+    authorizationUrl: https://guide.o9solutions.com/oauthserver/authorize
+    scopes_observed:
+    - openid
+    - email
+    - profile
+    response_type: code
+    response_mode: observed as empty or a target-page token (e.g. RedirectToApiDocs)
+  identity_providers:
+  - name: Azure AD B2C
+    endpoint: https://guide.o9solutions.com/OAuth/AzureB2C
+    audience: business email accounts (customers and partners)
+    mfa: observed isMFAEnabled=True on the authorize request
+  - name: Microsoft Organization Account
+    endpoint: https://guide.o9solutions.com/OAuth/MicrosoftOrganizationAccount
+    audience: o9 employees (SSO)
+  clients_observed:
+  - name: o9 Platform Wiki
+    client_id: c9fd4e6a-498d-43e9-aedc-3cf50d254308
+    redirect_uri: https://platformwiki.o9solutions.com/index.php/Special:OAuth2Client/callback
+    scope: openid email profile
+  - name: o9 Community
+    client_id: c3efaf96-a57c-48dd-a58d-f07e871b8ba9
+    redirect_uri: https://community.o9solutions.com/auth/oauth2_basic/callback
+    scope: ''
+  discovery:
+    openid_configuration: not published (404 at /.well-known/openid-configuration and
+      /oauthserver/.well-known/openid-configuration)
+    oauth_authorization_server: not published (404)
+gated_surfaces:
+- name: o9 Platform API reference
+  url: https://guide.o9solutions.com/Resources/ApiDocs
+  observed: redirects to guide.o9solutions.com/oauthserver/authorize
+- name: o9 Reference Model API reference
+  url: https://guide.o9solutions.com/Resources/RefModelApiDoc
+  observed: redirects to guide.o9solutions.com/oauthserver/authorize
+- name: o9 Platform Wiki
+  url: https://platformwiki.o9solutions.com/index.php/Platform_Wiki_-_Table_of_Contents
+  observed: redirects to the OAuth authorize endpoint
+platform_identity_features:
+  source: https://o9solutions.com/security
+  features:
+  - single sign-on (SSO)
+  - domain claiming
+  - enterprise mobility management (approved-device access)
+x-evidence:
+  fetched: '2026-07-31'
+  urls:
+  - https://guide.o9solutions.com/Resources/ApiDocs
+  - https://guide.o9solutions.com/Resources/RefModelApiDoc
+  - https://community.o9solutions.com/
+  - https://documents.o9solutions.com/
+  http_status: 200 (pre-authorization page) then 302 to /oauthserver/authorize

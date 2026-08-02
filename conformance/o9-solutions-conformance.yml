@@ -1,0 +1,105 @@
+generated: '2026-07-31'
+method: searched
+source: https://o9solutions.com/security
+note: >-
+  o9 publishes no public OpenAPI, AsyncAPI or GraphQL schema, so no standard here
+  is asserted from a machine-readable contract. Entries marked conforms:true are
+  either (a) directly observed on live, anonymous surfaces, or (b) named by o9 on
+  its published security/compliance page. Everything the API contract would tell
+  us (RFC 9457 errors, pagination, idempotency, JSON:API, OData) is unknown
+  because the API reference is behind the customer/partner OAuth login.
+standards:
+- id: oauth2
+  conforms: true
+  evidence: >-
+    o9 operates an OAuth 2.0 authorization server at
+    https://guide.o9solutions.com/oauthserver/authorize; authorization-code flow
+    with client_id/redirect_uri/response_type=code/state observed on live
+    first-party client requests (2026-07-31).
+- id: oidc
+  conforms: true
+  evidence: >-
+    the o9 Platform Wiki client requests scope "openid email profile" against the
+    o9 authorization server, indicating OpenID Connect. Note: no OIDC discovery
+    document is published — /.well-known/openid-configuration returns 404.
+- id: rfc8414-oauth-authorization-server-metadata
+  conforms: false
+  evidence: /.well-known/oauth-authorization-server returns 404 on guide.o9solutions.com
+- id: rfc8615-well-known
+  conforms: false
+  evidence: no /.well-known/ document served on any o9 host (see well-known/o9-solutions-well-known.yml)
+- id: rfc9116-security-txt
+  conforms: false
+  evidence: no /.well-known/security.txt served; the disclosure policy is an HTML
+    page only
+- id: llms-txt
+  conforms: true
+  evidence: https://o9solutions.com/llms.txt returns 200 with a well-formed llms.txt
+    (H1, blockquote summary, sectioned link lists); saved at llms/o9-solutions-llms.txt
+- id: iso-27001
+  conforms: true
+  evidence: named on https://o9solutions.com/security
+- id: iso-27017
+  conforms: true
+  evidence: named on https://o9solutions.com/security
+- id: soc-1
+  conforms: true
+  evidence: named on https://o9solutions.com/security
+- id: soc-2
+  conforms: true
+  evidence: named on https://o9solutions.com/security
+- id: bsi-c5
+  conforms: true
+  evidence: named on https://o9solutions.com/security
+- id: tisax
+  conforms: true
+  evidence: named on https://o9solutions.com/security
+- id: nist-csf-1.1
+  conforms: true
+  evidence: named on https://o9solutions.com/security
+- id: gdpr
+  conforms: true
+  evidence: named on https://o9solutions.com/security
+- id: ccpa
+  conforms: true
+  evidence: named on https://o9solutions.com/security
+- id: openapi
+  conforms: false
+  evidence: >-
+    no OpenAPI/Swagger document found. Probed /openapi.json, /openapi.yaml,
+    /swagger.json, /swagger/v1/swagger.json, /api-docs, /docs and /redoc against
+    o9solutions.com, www.o9solutions.com, guide.o9solutions.com,
+    documents.o9solutions.com and api.o9solutions.com (does not resolve) on
+    2026-07-31 — all 403/404/HTML-shell.
+- id: asyncapi
+  conforms: false
+  evidence: no AsyncAPI document or public webhook/event catalog found
+- id: graphql
+  conforms: false
+  evidence: no /graphql surface found on any o9 host
+- id: mcp
+  conforms: false
+  evidence: no hosted MCP server advertised in o9 docs, llms.txt or the MCP registries
+- id: a2a
+  conforms: false
+  evidence: /.well-known/agent-card.json and /.well-known/agent.json miss on every
+    o9 host (403 or 404, never a JSON AgentCard)
+- id: rfc9457-problem-details
+  conforms: null
+  assessable: false
+  evidence: cannot be assessed — no public API contract
+- id: rfc8594-sunset-header
+  conforms: null
+  assessable: false
+  evidence: cannot be assessed — no public deprecation policy or API contract
+x-evidence:
+  fetched: '2026-07-31'
+  hosts_probed:
+  - o9solutions.com
+  - www.o9solutions.com
+  - guide.o9solutions.com
+  - documents.o9solutions.com
+  - platformwiki.o9solutions.com
+  - community.o9solutions.com
+  - support.o9solutions.com
+  - api.o9solutions.com

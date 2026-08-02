@@ -1,0 +1,70 @@
+generated: '2026-07-31'
+method: probed
+source: https://o9solutions.com
+summary: >-
+  No /.well-known/ discovery document was found on any o9 Solutions host. The
+  marketing host (o9solutions.com / www.o9solutions.com) sits behind a WAF that
+  answers 403 for every /.well-known/* path; the guide (developer portal) host
+  answers 404; the documentation host is a Next.js SPA that answers 404 with an
+  HTML shell. o9 does publish a real /llms.txt on the marketing host, captured
+  verbatim at llms/o9-solutions-llms.txt, and an AI/LLM fact page at
+  https://o9solutions.com/ai-info.
+hosts:
+- host: https://o9solutions.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 403
+    note: WAF-blocked (no body returned)
+  - path: /.well-known/openid-configuration
+    status: 403
+  - path: /.well-known/oauth-authorization-server
+    status: 403
+  - path: /.well-known/api-catalog
+    status: 403
+  - path: /.well-known/ai-plugin.json
+    status: 403
+  - path: /.well-known/agent-card.json
+    status: 403
+  - path: /.well-known/agent.json
+    status: 403
+  - path: /llms.txt
+    status: 200
+    file: ../llms/o9-solutions-llms.txt
+    content_type: text/plain
+- host: https://guide.o9solutions.com
+  note: o9 developer/API guide portal; hosts the o9 OAuth authorization server at /oauthserver
+  documents:
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /oauthserver/.well-known/openid-configuration
+    status: 404
+  - path: /oauthserver/.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /llms.txt
+    status: 404
+- host: https://documents.o9solutions.com
+  note: Next.js docs portal; returns an HTML shell for unmatched paths
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+x-evidence:
+  fetched: '2026-07-31'
+  method: HTTP GET with a browser User-Agent (the marketing WAF rejects default agents)

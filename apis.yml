@@ -1,23 +1,129 @@
 aid: o9-solutions
 name: o9 Solutions
-description: 'o9 Solutions is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'o9 Solutions is an enterprise AI platform for integrated planning and
+  decision-making, founded in 2009 by Sanjiv Sidhu (previously founder of i2 Technologies)
+  and Chakri Gottemukkala, and headquartered in Dallas, Texas. Its o9 Digital Brain
+  platform unifies supply chain, commercial and financial planning on a patented Enterprise
+  Knowledge Graph (EKG) — an always-on digital twin of the enterprise — supporting
+  demand planning, AI/ML forecasting, supply chain master planning, control tower,
+  multi-echelon inventory optimization, supplier relationship management, revenue growth
+  management, merchandise planning and ESG planning. The platform ingests enterprise
+  data via SFTP batch, REST API, SOAP XML and streaming, with connectors to SAP, Oracle,
+  Snowflake, Databricks and Google BigQuery. o9 publishes two API surfaces — the o9
+  Platform API (public UI APIs over the GraphCube server) and the o9 Reference Model
+  API (SAP and inbound staging batch integration) — but both API references sit behind
+  the customer/partner OAuth login at guide.o9solutions.com, so no machine-readable
+  contract is publicly available.'
+image: https://cms.o9solutions.com/wp-content/uploads/2025/05/cropped-favicon-o9-2.webp
 url: https://raw.githubusercontent.com/api-evangelist/o9-solutions/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment-pipeline
 specificationVersion: '0.20'
 created: '2026-07-31'
 modified: '2026-07-31'
 tags:
 - Company
-apis: []
+- Supply Chain
+- Supply Chain Planning
+- Integrated Business Planning
+- Demand Planning
+- Enterprise Software
+- Artificial Intelligence
+- Knowledge Graph
+- Decision Intelligence
+- Retail Planning
+- Revenue Growth Management
+- Enterprise Resource Planning
+apis:
+- aid: o9-solutions:platform-api
+  name: o9 Platform API
+  description: 'The public UI APIs available in the o9 platform, used to access the
+    GraphCube server data and its model in order to query and visualize planning data.
+    The API reference is published in the o9 Guide but is gated behind the o9 OAuth
+    login (customer/partner accounts only); base URLs are tenant-scoped o9 platform
+    hosts, so no public, non-tenant base URL is advertised.'
+  humanURL: https://guide.o9solutions.com/Resources/ApiDocs
+  x-access: gated
+  x-access-note: 'Requires an o9 customer/partner account; guide.o9solutions.com/Resources/ApiDocs
+    redirects to guide.o9solutions.com/oauthserver/authorize (observed 2026-07-31).'
+  x-base-url-note: Base URL is tenant-scoped (per-customer o9 platform host); o9 publishes
+    no public non-tenant base URL, so none is recorded rather than fabricated.
+  tags:
+  - Planning
+  - GraphCube
+  - Enterprise Knowledge Graph
+  properties:
+  - type: APIReference
+    url: https://guide.o9solutions.com/Resources/ApiDocs
+- aid: o9-solutions:ref-model-api
+  name: o9 Reference Model API
+  description: 'A list of all SAP and Inbound Staging APIs used by the batch process
+    for o9 Reference Model integration. Documented in the o9 Guide behind the same
+    OAuth gate as the Platform API.'
+  humanURL: https://guide.o9solutions.com/Resources/RefModelApiDoc
+  x-access: gated
+  x-access-note: 'Requires an o9 customer/partner account; observed redirect to guide.o9solutions.com/oauthserver/authorize
+    on 2026-07-31.'
+  x-base-url-note: Base URL is tenant-scoped; no public base URL advertised.
+  tags:
+  - Integration
+  - SAP
+  - Batch
+  properties:
+  - type: APIReference
+    url: https://guide.o9solutions.com/Resources/RefModelApiDoc
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: TrustCenter
+  url: security/o9-solutions-trust-center.yml
+- type: VulnerabilityDisclosure
+  url: security/o9-solutions-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/o9-solutions-domain-security.yml
 - type: Website
+  url: https://o9solutions.com
+- type: DeveloperPortal
+  url: https://guide.o9solutions.com/
+- type: Documentation
+  url: https://documents.o9solutions.com/
+- type: APIReference
+  url: https://guide.o9solutions.com/Resources/ApiDocs
+- type: Support
+  url: https://support.o9solutions.com/
+- type: Community
+  url: https://community.o9solutions.com/
+- type: Blog
+  url: https://o9solutions.com/resources?type=post
+- type: SignUp
+  url: https://guide.o9solutions.com/Home/LogIn
+- type: TermsOfService
+  url: https://o9solutions.com/terms-of-use
+- type: PrivacyPolicy
+  url: https://o9solutions.com/privacy-policy
+- type: Security
+  url: https://o9solutions.com/security/vulnerability-disclosure-policy
+- type: Compliance
+  url: https://o9solutions.com/security
+- type: LLMsTxt
+  url: llms/o9-solutions-llms.txt
+- type: Authentication
+  url: authentication/o9-solutions-authentication.yml
+- type: OAuthScopes
+  url: scopes/o9-solutions-scopes.yml
+- type: Conformance
+  url: conformance/o9-solutions-conformance.yml
+- type: Lifecycle
+  url: lifecycle/o9-solutions-lifecycle.yml
+- type: Forge
   url: https://forgeglobal.com/o9-solutions_stock/
+x-enrichment:
+  date: '2026-07-31'
+  status: enriched
+  artifacts_added: 9
+  pass: local-v1

@@ -1,0 +1,47 @@
+generated: '2026-07-31'
+method: probed
+source: https://guide.o9solutions.com/Resources/PlatformWiki
+docs: null
+note: >-
+  o9 publishes no OpenAPI and no public scopes reference, so these are not
+  derived from a spec or from a documented scope catalog. They are the scopes
+  actually observed on live OAuth authorization requests issued by o9's own
+  first-party clients against guide.o9solutions.com/oauthserver. They cover
+  identity/profile only — no o9 Platform API resource scopes are publicly
+  observable, and the API scope model (if any) sits behind the customer login.
+schemes:
+- name: o9 OAuth 2.0
+  source: https://guide.o9solutions.com/oauthserver/authorize
+  flows:
+  - flow: authorizationCode
+    authorizationUrl: https://guide.o9solutions.com/oauthserver/authorize
+    tokenUrl: not publicly documented
+scopes:
+- scope: openid
+  description: OpenID Connect authentication — issues an ID token identifying the
+    signed-in o9 user.
+  flows:
+  - authorizationCode
+  sources:
+  - https://guide.o9solutions.com/Resources/PlatformWiki
+- scope: email
+  description: Access to the signed-in user's email address.
+  flows:
+  - authorizationCode
+  sources:
+  - https://guide.o9solutions.com/Resources/PlatformWiki
+- scope: profile
+  description: Access to the signed-in user's basic profile claims.
+  flows:
+  - authorizationCode
+  sources:
+  - https://guide.o9solutions.com/Resources/PlatformWiki
+coverage:
+  scopes_observed: 3
+  resource_scopes_public: 0
+  scope_reference_page_published: false
+x-evidence:
+  fetched: '2026-07-31'
+  url: https://guide.o9solutions.com/Resources/PlatformWiki
+  http_status: 200
+  observed_query: client_id=c9fd4e6a-498d-43e9-aedc-3cf50d254308&scope=openid+email+profile&response_type=code

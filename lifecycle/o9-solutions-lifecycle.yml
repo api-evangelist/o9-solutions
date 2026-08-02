@@ -1,0 +1,48 @@
+generated: '2026-07-31'
+method: probed
+source: https://o9solutions.com
+note: >-
+  o9 Solutions is an enterprise SaaS vendor whose operational transparency runs
+  through the customer/partner portals rather than public pages. This file
+  records what is verifiably public as of the probe date; the negatives are the
+  finding, not a gap in the probe.
+versioning:
+  scheme: unknown
+  current: null
+  docs: null
+  note: no public versioning policy; the API reference is behind the o9 OAuth login
+deprecation:
+  policy_url: null
+  sunset_header: unknown
+  note: no public deprecation or sunset policy found
+sla:
+  url: null
+  uptime_target: null
+  note: SLAs are contracted per customer; nothing published
+status_page: null
+status_page_evidence:
+- url: https://status.o9solutions.com/
+  status: 0
+  note: does not resolve
+- url: https://o9.statuspage.io/
+  status: 200
+  note: redirects to /inactive — an Atlassian Statuspage page that is not active
+- url: https://o9solutions.com/status
+  status: 0
+  note: does not resolve
+changelog:
+  url: null
+  note: no dated public changelog or release-notes page found; platform release notes
+    live in the gated documentation portal
+support:
+  url: https://support.o9solutions.com/
+  access: gated (Cloudflare challenge / o9 account required)
+community:
+  url: https://community.o9solutions.com/
+  access: gated (redirects to the o9 OAuth authorization server)
+roadmap:
+  url: null
+  note: no public roadmap
+deprecated_operations: []
+x-evidence:
+  fetched: '2026-07-31'

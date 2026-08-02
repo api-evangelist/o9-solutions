@@ -1,0 +1,131 @@
+# o9 Solutions
+
+> Enterprise AI platform for integrated planning and decision-making. o9's Digital Brain unifies supply chain, commercial, and financial planning on the Enterprise Knowledge Graph (EKG) — an always-on digital twin of the enterprise — enabling real-time sensing, scenario simulation, and connected decisions across strategic, tactical, and operational horizons.
+
+o9 Solutions was founded in 2009 by Sanjiv Sidhu (Chairman, formerly founder of i2 Technologies) and Chakri Gottemukkala (CEO). The company is headquartered in Dallas, Texas, with offices globally, and serves 30+ industry verticals. Named customers include Keurig Dr Pepper, T-Mobile, Comcast, Philips, Pepsico, Pirelli, Coca-Cola Bottlers Japan, and Marks & Spencer.
+
+The Digital Brain platform combines the patented Enterprise Knowledge Graph, AI/ML forecasting, generative and agentic AI (composite agents built on atomic agents), and modular "building block" solutions across supply chain, integrated business planning, revenue growth management, and P&L planning. o9 is a Gartner Magic Quadrant-recognized vendor across Supply Chain Planning, Retail Merchandise Financial Planning, and Decision Intelligence Platforms.
+
+## The Platform
+
+- [o9 Digital Brain](https://o9solutions.com/digital-brain): Overview of the core AI platform — Enterprise Knowledge Graph, AI/ML models, agentic AI, and the sense–decide–act architecture.
+- [Why choose o9](https://o9solutions.com/why-choose-o9): o9's differentiators versus legacy planning tools and competing enterprise planning vendors.
+- [APEX Model](https://o9solutions.com/apex): o9's Agile, Adaptive, Autonomous operating model for planning and execution in VUCA environments, powered by Neuro-Symbolic AI.
+- [Performance Post-Game Analysis (PGA)](https://o9solutions.com/pga): Automated learning capability that analyzes execution vs. plan, identifies root causes of value leakage, and continuously refines planning policies.
+- [AI Innovation](https://o9solutions.com/ai-innovation): How o9 combines generative AI, agentic AI, and Neuro-Symbolic AI in the Digital Brain platform.
+- [Security](https://o9solutions.com/security): o9's approach to platform security, compliance, and data protection for enterprise customers.
+- [Platform Tour](https://o9solutions.com/platform-tour): Guided walkthrough of the Digital Brain platform's capabilities and user experience.
+- [Request a Demo](https://o9solutions.com/request-a-demo): Book a personalized walkthrough with an o9 solution specialist.
+
+## Solutions
+
+- [Solutions overview](https://o9solutions.com/solutions): Top-level map of o9's planning capabilities across supply chain, commercial, and P&L domains.
+- [Integrated Business Planning (IBP)](https://o9solutions.com/solutions/integrated-business-planning): How o9 unifies demand, supply, and financial planning into one connected, cross-functional process.
+- [Sales & Operations Planning (S&OP)](https://o9solutions.com/solutions/integrated-business-planning/sales-operations-planning): Connect strategic planning with day-to-day execution while maintaining alignment and financial control.
+- [Demand Planning](https://o9solutions.com/solutions/demand-planning): Demand sensing, forecasting, and shaping across horizons and channels — the hub for demand-side capabilities.
+- [AI/ML Demand Forecasting](https://o9solutions.com/solutions/demand-planning/ai-ml-forecasting): Built-in ML models for demand forecasting, including NPI (new product introduction) support.
+- [Supply Chain Planning](https://o9solutions.com/solutions/supply-chain-planning): Advanced supply chain planning with demand-supply matching, scenario analysis, and integrated execution.
+- [Supply Chain Master Planning](https://o9solutions.com/solutions/supply-chain-planning/supply-chain-master-planning): Align monthly, weekly, and daily planning horizons on a unified data model with multi-tier supplier visibility.
+- [Supply Chain Control Tower](https://o9solutions.com/solutions/supply-chain-planning/supply-chain-control-tower): Real-time visibility and response across demand, supply, and inventory using a digital twin of the network.
+- [Multi-Echelon Inventory Optimization (MEIO)](https://o9solutions.com/solutions/supply-chain-planning/multi-echelon-inventory-optimization): Inventory optimization across the full supply network to balance working capital and service levels.
+- [Supplier Relationship Management (SRM)](https://o9solutions.com/solutions/supplier-relationship-management): Multi-tier supplier collaboration, performance management, and risk visibility across the extended supply network.
+- [Revenue Growth Management (RGM)](https://o9solutions.com/solutions/revenue-growth-management): Pricing, promotion, trade spend, and portfolio optimization to drive profitable revenue growth.
+- [Merchandise Planning](https://o9solutions.com/solutions/merchandise-planning): Assortment planning, buying, allocation, and merchandise financial planning for retail and consumer brands.
+- [Assortment Planning](https://o9solutions.com/solutions/merchandise-planning/assortment-planning): Data-driven assortment optimization — SKU selection, breadth and depth, and store/channel clustering decisions.
+- [ESG and Sustainability](https://o9solutions.com/solutions/esg-and-sustainability): Embed ESG metrics and sustainability targets directly into enterprise planning — emissions, circularity, and reporting.
+
+## Industries
+
+- [Industries overview](https://o9solutions.com/industries): Hub page listing all industry verticals o9 serves, with vertical-specific solutions.
+- [Automotive](https://o9solutions.com/industries/automotive): AI-powered planning for OEMs and suppliers — production, supply, service parts, and portfolio decisions.
+- [Consumer Products](https://o9solutions.com/industries/consumer-products): Integrated planning for CPG — demand volatility, promotions, portfolio complexity, and route-to-market.
+- [Food & Beverage](https://o9solutions.com/industries/consumer-products/food-and-beverage): AI-powered planning tailored for F&B — demand volatility, promotions, perishability, and route-to-market.
+- [Energy & Resources](https://o9solutions.com/industries/energy-and-resources): Planning and decision-making across the energy and resources value chain.
+- [High Tech](https://o9solutions.com/industries/high-tech): Planning for semiconductors, electronics, and hardware — long lead times, allocation, and demand volatility.
+- [Industrial Manufacturing](https://o9solutions.com/industries/industrial-manufacturing): Integrated planning for industrial equipment makers — complex BOMs, long horizons, and engineer-to-order flows.
+- [Life Science](https://o9solutions.com/industries/life-science): Planning for pharma, biotech, and med-tech — regulatory constraints, cold chain, and launch cycles.
+- [Retail](https://o9solutions.com/industries/retail): Integrated planning for retailers — assortment, allocation, inventory, and demand across stores and channels.
+- [Telecom](https://o9solutions.com/industries/telecom): Planning across telecom — network build, device supply, service parts, and consumer/enterprise demand.
+- [Wholesale Distribution](https://o9solutions.com/industries/wholesale-distribution): Integrated planning for wholesale distributors — multi-echelon inventory, service levels, and supplier networks.
+
+## Case Studies
+
+Customer names in the public case studies below are anonymized under NDA. A representative sample of named customers appears in the introduction above.
+
+- [Global tobacco manufacturer — 15 ERPs unified on one platform](https://o9solutions.com/case-studies/tobacco-manufacturer): How a global tobacco leader consolidated fragmented IT into a single planning platform.
+- [Global furniture manufacturer — $1.7B in synchronized sales via S&OP](https://o9solutions.com/case-studies/furniture-manufacturer): Moving from fragmented spreadsheets to mastered S&OP.
+- [Rapid-delivery e-commerce retailer](https://o9solutions.com/case-studies/ecommerce-retailer): Scaling a fast-growing e-commerce supply chain beyond spreadsheets.
+- [Global agricultural distributor — 50% cut in inventory write-downs](https://o9solutions.com/case-studies/agricultural-distributor): Reducing waste and write-downs through better planning.
+- [Global semiconductor company — unified global planning](https://o9solutions.com/case-studies/tech-company): Unifying semiconductor planning on a single platform.
+
+## Partners
+
+- [Partners](https://o9solutions.com/partners): Hub for o9's partner ecosystem — system integrators, consulting firms, and technology partners across the extended o9 delivery and integration network.
+- [Consulting & SI Partners](https://o9solutions.com/partners?company_tag=SI%252FConsulting): Global system integrators and consulting firms delivering o9 implementations.
+- [Technology Partners](https://o9solutions.com/partners?company_tag=Technology): Technology and platform partners, including hyperscaler marketplaces, and integration providers.
+
+## Analyst Recognition
+
+- [Analyst Validation](https://o9solutions.com/analyst-validation): Hub of analyst recognition for o9 — Gartner Magic Quadrants, Forrester reports, IDC, and other third-party evaluations.
+- [Gartner resources hub](https://o9solutions.com/resources/gartner): All Gartner-related reports, Magic Quadrants, and Voice of the Customer citations featuring o9.
+- [2026 Gartner Magic Quadrant for Supply Chain Planning Solutions: Process Industries](https://o9solutions.com/resources/2026-gartner-magic-quadrant-process-industries): o9's positioning in the 18 March 2026 process industries Magic Quadrant.
+- [2026 Gartner Magic Quadrant for Supply Chain Planning Solutions: Discrete Industries](https://o9solutions.com/resources/2026-gartner-magic-quadrant-discrete-industries): o9's positioning in the 18 March 2026 discrete industries Magic Quadrant.
+- [2026 Gartner Magic Quadrant for Decision Intelligence Platforms](https://o9solutions.com/resources/2026-gartner-magic-quadrant-for-decision-intelligence-platforms): o9's positioning in the 26 January 2026 Decision Intelligence Platforms Magic Quadrant.
+- [Gartner Voice of the Customer for Supply Chain Planning Solutions](https://o9solutions.com/resources/gartner-voice-of-customers-for-supply-chain-planning-solutions): Customer reviews and ratings summary from Gartner's 30 September 2025 report.
+
+## Resources
+
+- [Resources hub](https://o9solutions.com/resources): All white papers, analyst reports, guides, ebooks, and use-case content in one place.
+- [The Next Evolution of IBP](https://o9solutions.com/resources/the-next-evolution-of-ibp): Modernizing Integrated Business Planning — moving from static cycles to real-time, connected, scenario-driven decisions.
+- [Demand Planning whitepaper](https://o9solutions.com/resources/demand-planning-whitepaper): Modern demand planning practices — AI/ML forecasting, demand sensing, and multi-channel signals.
+- [Supply Planning — Key Capabilities for Effective Decision-Making](https://o9solutions.com/resources/supply-planning-key-capabilities-for-effective-decision-making): Critical supply planning capabilities that enable effective decision-making at enterprise scale.
+- [Integrating Supply Chain and Procurement — a Unified Platform Approach](https://o9solutions.com/resources/integrating-supply-chain-procurement-a-unified-platform-approach): Unifying supply chain planning and procurement on one platform for supplier collaboration and risk management.
+- [Assortment Planning ebook](https://o9solutions.com/resources/assortment-planning-ebook): Modern assortment planning for retail and consumer brands — clustering, breadth and depth, and data-driven decisions.
+- [Where Next for Pricing in the Consumer Goods Industry](https://o9solutions.com/resources/where-next-for-pricing-in-the-consumer-goods-industry): The future of pricing strategy in consumer goods — dynamic pricing, promotion optimization, and revenue growth management.
+- [The Net Zero Mindset](https://o9solutions.com/resources/net-zero-mindset): Embedding sustainability and net-zero commitments into enterprise planning processes.
+- [APO replacement use cases](https://o9solutions.com/resources/apo-replacement-use-cases): Guidance for enterprises migrating from SAP APO (which SAP has been sunsetting since 2017).
+
+## Academy (Training)
+
+- [o9 Academy](https://o9solutions.com/academy): Training hub for configurators, planners, and platform users.
+- [o9 Platform Technical Training](https://o9solutions.com/academy/o9-platform-technical-training): Technical training on the o9 Digital Brain platform.
+- [Demand Planning — Functional](https://o9solutions.com/academy/o9-reference-products-demand-planning): Functional training on o9's demand planning solution.
+- [Demand Planning — Technical (for Configurators)](https://o9solutions.com/academy/demand-planning-technical-for-configurators): Technical training for solution configurators.
+- [o9 Integrations (Int3)](https://o9solutions.com/academy/o9-integrations-int3): Training on o9 platform integrations.
+- [Config 2.0](https://o9solutions.com/academy/config-2-0): Configuration training for platform builders.
+
+## Events
+
+- [Events overview](https://o9solutions.com/events): All o9 events in one place — global summits, regional editions, virtual events, and industry-specific gatherings.
+- [aim10x Summits](https://o9solutions.com/events/aim10x-summits): o9's global summit series for executives, transformation leaders, and planning practitioners.
+- [aim10x Digital](https://o9solutions.com/events/aim10x-digital): The virtual edition of aim10x — online sessions, keynotes, and client stories on planning transformation.
+- [aim10x Summits — Americas](https://o9solutions.com/events/aim10x-summits-america): The North America regional edition.
+- [aim10x Summits — Europe](https://o9solutions.com/events/aim10x-summits-emea): The European regional edition.
+- [Growth Leaders Summit 2026 — London](https://o9solutions.com/events/growth-leaders-summit-2026-london): One-day event on driving profitable growth in consumer products and retail.
+
+## Newsroom
+
+- [Newsroom](https://o9solutions.com/newsroom): Hub for all o9 news, press releases, and company announcements.
+- [Press Releases](https://o9solutions.com/newsroom/press-releases): All official o9 press releases in one place.
+- [o9 files trade secret misappropriation complaint against SAP and former o9 executives](https://o9solutions.com/news/o9-solutions-files-trade-secret-misappropriation-complaint-against-sap-and-former-o9-executives-in-u-s-district-court): o9 filed a trade secret misappropriation complaint against SAP and former o9 executives in U.S. District Court.
+- [o9 partners with Databricks to accelerate supply chain planning](https://o9solutions.com/news/o9-partners-with-databricks-to-accelerate-time-to-value-for-supply-chain-planning): Strategic partnership with Databricks to accelerate time-to-value for supply chain planning implementations.
+- [o9 recognized in three 2026 Gartner Magic Quadrant reports](https://o9solutions.com/news/o9-solutions-recognized-in-three-new-2026-gartner-magic-quadrant-reports-for-supply-chain-planning-process-and-discrete-and-decision-intelligence-platforms): Recognition in three 2026 Gartner Magic Quadrants — SCP Process Industries, SCP Discrete Industries, and Decision Intelligence Platforms.
+- [Existing investors double down at $3.7B valuation](https://o9solutions.com/news/existing-investors-double-down-on-o9-solutions-growth-with-incremental-investment-at-3-7-billion-valuation): Existing investors expanded their stake in o9 at a $3.7 billion valuation.
+- [o9 grew subscription revenue 37% in 2024](https://o9solutions.com/news/o9-grows-subscription-revenue-by-37-in-2024): o9 reported 37% subscription revenue growth for 2024.
+
+## Company
+
+- [About o9](https://o9solutions.com/about): Company overview — mission, history, and the story behind the Digital Brain platform.
+- [Careers](https://o9solutions.com/careers): Open roles across engineering, product, consulting, and go-to-market functions worldwide.
+- [Contact](https://o9solutions.com/contact): General contact information and inquiry routing for sales, partnerships, press, and support. It also lists addresses of o9 offices around the world.
+
+## Sustainability
+
+- [Social Impact & Sustainability](https://o9solutions.com/o9-sustainability): o9's approach to sustainability, communities, and responsible technology.
+- [ESG Transformation](https://o9solutions.com/esg-transformation): How o9 helps enterprises embed ESG into their planning processes.
+- [o9 Annual ESG Report 2026](https://o9solutions.com/news/o9-esg-report-2026): Latest ESG reporting from o9.
+
+## Optional
+
+- [Sitemap index](https://o9solutions.com/sitemap.xml): Full XML sitemap index for crawlers preferring structured discovery.
+- Localized editions of this site are available under `/br/` (Portuguese), `/cn/` (Simplified Chinese), `/tw/` (Traditional Chinese), `/ja/` (Japanese), and `/ko/` (Korean). Each region publishes its own llms.txt at the subpath root.

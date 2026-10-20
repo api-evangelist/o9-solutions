@@ -1,8 +1,18 @@
-generated: '2026-10-13'
+generated: '2026-10-19'
 method: searched
+source:
+- https://zapier.com/apps/o9-solutions/integrations
+- https://n8n.io/integrations/o9-solutions/
+- https://composio.dev/toolkits/o9-solutions
+- https://monid.ai/tools/o9-solutions
 checked:
 - https://azuremarketplace.microsoft.com/
+- https://composio.dev/toolkits/o9-solutions
+- https://monid.ai/tools/o9-solutions
+- https://n8n.io/integrations/o9-solutions/
+- https://zapier.com/apps/o9-solutions/integrations
 - microsoft-teams/integrations/microsoft-teams-integration-edges.yml
+summary: null
 marketplace_apps: []
 edges:
 - partner_name: Microsoft Azure Marketplace
@@ -39,5 +49,4 @@ edges:
   category: Microsoft Teams app
   publisher_verified:
   - Microsoft 365 Publisher Attestation
-source:
-- microsoft-teams/integrations/microsoft-teams-integration-edges.yml
+templates: []

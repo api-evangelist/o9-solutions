@@ -1,5 +1,7 @@
 aid: o9-solutions
+
 name: o9 Solutions
+
 description: 'o9 Solutions is an enterprise AI platform for integrated planning and
   decision-making, founded in 2009 by Sanjiv Sidhu (previously founder of i2 Technologies)
   and Chakri Gottemukkala, and headquartered in Dallas, Texas. Its o9 Digital Brain
@@ -14,6 +16,7 @@ description: 'o9 Solutions is an enterprise AI platform for integrated planning 
   API (SAP and inbound staging batch integration) — but both API references sit behind
   the customer/partner OAuth login at guide.o9solutions.com, so no machine-readable
   contract is publicly available.'
+
 deliveryModel:
   model: saas
   open_source: false
@@ -25,6 +28,7 @@ deliveryModel:
   - pricing
   generated: '2026-08-28'
   method: derived
+
 accessModel:
   pricing: unknown
   onboarding: self-serve
@@ -39,15 +43,25 @@ accessModel:
   - security
   generated: '2026-09-02'
   method: derived
+
 image: https://cms.o9solutions.com/wp-content/uploads/2025/05/cropped-favicon-o9-2.webp
+
 url: https://raw.githubusercontent.com/api-evangelist/o9-solutions/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
+
 x-tier: profiled
+
 x-tier-reason: enrichment-pipeline
+
 specificationVersion: '0.23'
+
 created: '2026-07-31'
+
 modified: '2026-07-31'
+
 tags:
 - Company
 - Supply Chain
@@ -61,6 +75,7 @@ tags:
 - Retail Planning
 - Revenue Growth Management
 - ERP
+
 tags_raw:
 - Company
 - Supply Chain
@@ -74,50 +89,30 @@ tags_raw:
 - Retail Planning
 - Revenue Growth Management
 - Enterprise Resource Planning
-apis:
-- aid: o9-solutions:platform-api
-  name: o9 Platform API
-  description: 'The public UI APIs available in the o9 platform, used to access the
-    GraphCube server data and its model in order to query and visualize planning data.
-    The API reference is published in the o9 Guide but is gated behind the o9 OAuth
-    login (customer/partner accounts only); base URLs are tenant-scoped o9 platform
-    hosts, so no public, non-tenant base URL is advertised.'
-  humanURL: https://guide.o9solutions.com/Resources/ApiDocs
-  x-access: gated
-  x-access-note: 'Requires an o9 customer/partner account; guide.o9solutions.com/Resources/ApiDocs
-    redirects to guide.o9solutions.com/oauthserver/authorize (observed 2026-07-31).'
-  x-base-url-note: Base URL is tenant-scoped (per-customer o9 platform host); o9 publishes
-    no public non-tenant base URL, so none is recorded rather than fabricated.
-  tags:
-  - Planning
-  - GraphCube
-  - Enterprise Knowledge Graph
-  properties:
-  - type: APIReference
-    url: https://guide.o9solutions.com/Resources/ApiDocs
-- aid: o9-solutions:ref-model-api
-  name: o9 Reference Model API
-  description: 'A list of all SAP and Inbound Staging APIs used by the batch process
-    for o9 Reference Model integration. Documented in the o9 Guide behind the same
-    OAuth gate as the Platform API.'
-  humanURL: https://guide.o9solutions.com/Resources/RefModelApiDoc
-  x-access: gated
-  x-access-note: 'Requires an o9 customer/partner account; observed redirect to guide.o9solutions.com/oauthserver/authorize
-    on 2026-07-31.'
-  x-base-url-note: Base URL is tenant-scoped; no public base URL advertised.
-  tags:
-  - Integration
-  - SAP
-  - Batch
-  properties:
-  - type: APIReference
-    url: https://guide.o9solutions.com/Resources/RefModelApiDoc
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Deprecation
+  url: lifecycle/o9-solutions-lifecycle.yml
+- type: WellKnown
+  url: well-known/o9-solutions-well-known.yml
+- type: Hosts
+  url: hosts/o9-solutions-hosts.yml
+- type: IntegrationEdges
+  url: integrations/o9-solutions-integration-edges.yml
+- type: Vendors
+  url: vendors/o9-solutions-vendors.yml
+- type: Pricing
+  url: https://o9solutions.com/articles/pricing-management-and-tariff-led-inflation
+- type: Newsroom
+  url: https://o9solutions.com/newsroom
+- type: GitHubOrganization
+  url: https://github.com/o9Solutions
 - type: TrustCenter
   url: security/o9-solutions-trust-center.yml
 - type: VulnerabilityDisclosure
@@ -160,8 +155,60 @@ common:
   url: lifecycle/o9-solutions-lifecycle.yml
 - type: Forge
   url: https://forgeglobal.com/o9-solutions_stock/
+
+apis:
+- aid: o9-solutions:platform-api
+  name: o9 Platform API
+  description: 'The public UI APIs available in the o9 platform, used to access the
+    GraphCube server data and its model in order to query and visualize planning data.
+    The API reference is published in the o9 Guide but is gated behind the o9 OAuth
+    login (customer/partner accounts only); base URLs are tenant-scoped o9 platform
+    hosts, so no public, non-tenant base URL is advertised.'
+  humanURL: https://guide.o9solutions.com/Resources/ApiDocs
+  x-access: gated
+  x-access-note: 'Requires an o9 customer/partner account; guide.o9solutions.com/Resources/ApiDocs
+    redirects to guide.o9solutions.com/oauthserver/authorize (observed 2026-07-31).'
+  x-base-url-note: Base URL is tenant-scoped (per-customer o9 platform host); o9 publishes
+    no public non-tenant base URL, so none is recorded rather than fabricated.
+  tags:
+  - Planning
+  - GraphCube
+  - Enterprise Knowledge Graph
+  properties:
+  - type: APIReference
+    url: https://guide.o9solutions.com/Resources/ApiDocs
+- aid: o9-solutions:ref-model-api
+  name: o9 Reference Model API
+  description: 'A list of all SAP and Inbound Staging APIs used by the batch process
+    for o9 Reference Model integration. Documented in the o9 Guide behind the same
+    OAuth gate as the Platform API.'
+  humanURL: https://guide.o9solutions.com/Resources/RefModelApiDoc
+  x-access: gated
+  x-access-note: 'Requires an o9 customer/partner account; observed redirect to guide.o9solutions.com/oauthserver/authorize
+    on 2026-07-31.'
+  x-base-url-note: Base URL is tenant-scoped; no public base URL advertised.
+  tags:
+  - Integration
+  - SAP
+  - Batch
+  properties:
+  - type: APIReference
+    url: https://guide.o9solutions.com/Resources/RefModelApiDoc
+
 x-enrichment:
-  date: '2026-07-31'
-  status: enriched
-  artifacts_added: 9
-  pass: local-v1
+  date: '2026-10-19'
+  status: nochange
+  artifacts_added: 3
+  pass: local-v5
+x-coverage:
+  state: gated
+  reason: customer-only-docs
+  detail: Both API references (guide.o9solutions.com/Resources/ApiDocs and /RefModelApiDoc) redirect to the guide.o9solutions.com OAuthServer preauthorize customer/partner login, so no contract is publicly readable.
+  evidence:
+  - url: https://guide.o9solutions.com/Resources/ApiDocs
+    status: 200
+  - url: https://guide.o9solutions.com/Resources/RefModelApiDoc
+    status: 200
+  - url: https://o9solutions.com
+    status: 200
+  checked: '2026-10-19'

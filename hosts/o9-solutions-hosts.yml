@@ -1,0 +1,150 @@
+generated: '2026-10-19'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 10
+  own: 8
+  other_domain: 0
+  platform: 2
+  roles:
+  - api
+  - community
+  - docs
+  - other
+  - partner
+  - portal
+  - source
+  - support
+  - website
+hosts:
+- host: api.o9solutions.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: o9solutions.com
+  role: api
+  relation: own
+- host: community.o9solutions.com
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  types:
+  - Community
+  serves: []
+  registrable_domain: o9solutions.com
+  role: community
+  relation: own
+- host: dev.o9solutions.com
+  found_by:
+  - probed
+  - site-links
+  - docs-index
+  - well-known
+  types: []
+  serves:
+  - docs
+  registrable_domain: o9solutions.com
+  role: other
+  relation: own
+- host: documents.o9solutions.com
+  found_by:
+  - pointer
+  - probed
+  - docs-index
+  - contract-discovery
+  - well-known
+  types:
+  - Documentation
+  serves:
+  - docs
+  registrable_domain: o9solutions.com
+  role: docs
+  relation: own
+- host: forgeglobal.com
+  found_by:
+  - pointer
+  types:
+  - Forge
+  serves: []
+  registrable_domain: forgeglobal.com
+  role: other
+  relation: platform
+- host: github.com
+  found_by:
+  - pointer
+  types:
+  - GitHubOrganization
+  serves: []
+  registrable_domain: github.com
+  role: source
+  relation: platform
+- host: guide.o9solutions.com
+  found_by:
+  - pointer
+  - apis[]
+  - probed
+  - site-links
+  - docs-index
+  - contract-discovery
+  - well-known
+  types:
+  - DeveloperPortal
+  - APIReference
+  - SignUp
+  serves:
+  - docs
+  registrable_domain: o9solutions.com
+  role: portal
+  relation: own
+- host: o9solutions.com
+  found_by:
+  - pointer
+  - probed
+  - well-known
+  - vendor-detect
+  types:
+  - Pricing
+  - Newsroom
+  - Website
+  - Blog
+  - TermsOfService
+  - PrivacyPolicy
+  - Security
+  - Compliance
+  serves:
+  - cdn
+  - hosting
+  vendor: cloudflare
+  registrable_domain: o9solutions.com
+  role: website
+  relation: own
+- host: partners.o9solutions.com
+  found_by:
+  - probed
+  - site-links
+  - namespace-probe
+  - well-known
+  types: []
+  serves: []
+  title: Login &#8211; o9 Partner Portal
+  status: 200
+  registrable_domain: o9solutions.com
+  role: partner
+  relation: own
+- host: support.o9solutions.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - Support
+  serves: []
+  registrable_domain: o9solutions.com
+  role: support
+  relation: own
